@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="RuchiToursWPF.Welcome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RuchiToursWPF"
+             mc:Ignorable="d" Width="950" Height="800">
+    <Grid Width="950" Height="795" d:IsLocked="True">
+        <Rectangle x:Name="WelcomNote" HorizontalAlignment="Center" Height="380" Margin="0,190,0,0" Stroke="White" VerticalAlignment="Top" Width="600" StrokeThickness="5" RadiusX="30" RadiusY="30" d:IsLocked="True">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="Welcome_Copy" Content="WELCOME" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" FontSize="60" Width="220" Height="70" FontFamily="Microsoft Uighur" d:IsLocked="True"/>
+        <Label x:Name="Note" HorizontalAlignment="Center" VerticalAlignment="Center" Width="428" Height="230" Content="                     Explore the world with ease! &#xA;      &#x9;   We create personalized tour plans &#xA;     tailored to your interests,budget, and schedule.&#xA;     Whether you're dreaming of a relaxing getaway, &#xA;                       an adventure-packed trip, &#xA;                                      or &#xA;                          a cultural experience, &#xA;                            &#xA;                         we've got you covered." FontSize="18" FontFamily="Microsoft Tai Le" d:IsLocked="True"/>
+
+    </Grid>
+</UserControl>

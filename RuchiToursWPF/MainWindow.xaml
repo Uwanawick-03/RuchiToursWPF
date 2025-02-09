@@ -6,49 +6,45 @@
         xmlns:local="clr-namespace:RuchiToursWPF"
         mc:Ignorable="d"
         Title="Login" Height="800" Width="1250" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="Login">
-        <Canvas/>
-        <Image Source="/ali-maah-zyOeEm4NsPM-unsplash.jpg" Stretch="Fill" Width="1250" Height="805" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Rectangle x:Name="PanelLogin" HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="496" ClipToBounds="True" Fill="#FF3AA9AD" Stroke="White" StrokeThickness="0">
+    <Grid x:Name="Login" d:IsLocked="True">
+        <Image Source="/ali-maah-zyOeEm4NsPM-unsplash.jpg" Stretch="Fill" Width="1250" Height="805" HorizontalAlignment="Center" VerticalAlignment="Center" d:IsLocked="True"/>
+        <Rectangle x:Name="PanelLogin" HorizontalAlignment="Center" Height="500" Width="360" ClipToBounds="True" Stroke="White" StrokeThickness="2" Margin="0,150,0,140" RadiusX="20" RadiusY="20" d:IsLocked="True">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF3AA9AD" Opacity="0.6"/>
+            </Rectangle.Fill>
             <Rectangle.Effect>
                 <BlurEffect/>
 
             </Rectangle.Effect>
         </Rectangle>
-        <Polygon Points="0,20 230,140 0,270" Fill="#FF4EB1B6" OpacityMask="Black" Margin="0,79,1020,451"/>
-        <Polygon Points="100,400 200,370 180,470" Fill="#4EB1B6" Margin="148,182,902,148"/>
-        <Button x:Name="BtnClose" Content="X" HorizontalAlignment="Left" Margin="1210,10,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Button_Click" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" ClipToBounds="True">
+        <Button x:Name="BtnClose" Content="X" HorizontalAlignment="Left" Margin="1210,10,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Button_Click" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" ClipToBounds="True" d:IsLocked="True">
             <Button.Background>
                 <SolidColorBrush Color="#FFC30000" Opacity="0"/>
             </Button.Background>
         </Button>
-        <Label Content="User Name" HorizontalAlignment="Left" Margin="92,274,93,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="20" Width="104" Height="32">
+        <Label Content="Login Your Account" HorizontalAlignment="Center" Margin="0,192,0,0" VerticalAlignment="Top" Height="45" Width="300" FontSize="30" FontFamily="Microsoft Tai Le" FontWeight="Bold" d:IsLocked="True"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="475,277,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="20" Width="104" Height="32" d:IsLocked="True">
             <Label.Background>
                 <SolidColorBrush Color="#FFFDFDFD" Opacity="0"/>
             </Label.Background>
         </Label>
-        <TextBox x:Name="TxtUserName" HorizontalAlignment="Left" Margin="92,316,93,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="30"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="92,376,93,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Medium" FontSize="20" Width="92" Height="32">
+        <TextBox x:Name="TxtUserName" HorizontalAlignment="Center" Margin="0,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="30" FontFamily="Microsoft Tai Le" FontSize="20" d:IsLocked="True"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="475,379,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="20" Width="92" Height="32" d:IsLocked="True">
             <Label.Background>
                 <SolidColorBrush Color="#FFFDFDFD" Opacity="0"/>
             </Label.Background>
         </Label>
-        <TextBox x:Name="TxtPassword" HorizontalAlignment="Left" Margin="92,418,93,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" Height="32"/>
-        <Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Left" Margin="92,500,0,0" VerticalAlignment="Top" Width="152" Height="32" FontFamily="Franklin Gothic Medium" FontSize="16" BorderThickness="7,0,0,0">
+        <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" Margin="0,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="20" d:IsLocked="True"/>
+        <Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,555,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" BorderThickness="7,0,0,0" Click="BtnRegister_Click" d:IsLocked="True">
             <Button.Style>
                 <Style/>
             </Button.Style>
         </Button>
-        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Left" Margin="256,500,0,0" VerticalAlignment="Top" Width="152" Height="32" FontFamily="Franklin Gothic Medium" FontSize="16" Background="#FF74C2C2" BorderThickness="7,0,0,0" BorderBrush="#FF2D7B7B" ClipToBounds="True">
+        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,503,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" Background="#FF74C2C2" BorderThickness="7,0,0,0" BorderBrush="#FF2D7B7B" ClipToBounds="True" d:IsLocked="True">
             <Button.Style>
                 <Style/>
             </Button.Style>
         </Button>
-        <Ellipse HorizontalAlignment="Left" Height="40" Margin="330,360,0,0" VerticalAlignment="Top" Width="40" Fill="#FF4EB1B6"/>
-        <Ellipse HorizontalAlignment="Left" Height="20" Margin="156,640,0,0" VerticalAlignment="Top" Width="20" Fill="#FF4EB1B6"/>
-        <Label Content="&#x9;          Explore the world with ease! &#xD;&#xA;&#x9;We create personalized tour plans tailored&#xD;&#xA;&#x9;  to your interests,budget, and schedule.&#xD;&#xA;             Whether you’re dreaming of a relaxing getaway, &#xD;&#xA;           an adventure-packed trip, or a cultural experience, &#xD;&#xA;                               we’ve got you covered." HorizontalAlignment="Left" Margin="562,300,0,0" VerticalAlignment="Top" FontSize="24" Width="650" Height="234" Background="{x:Null}" FontFamily="Franklin Gothic Medium"/>
-        <Label Content="WELCOME" HorizontalAlignment="Left" Margin="775,199,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Franklin Gothic Medium" FontWeight="Bold"/>
-        <Label Content="Login Your Account" HorizontalAlignment="Left" Margin="92,199,-6,0" VerticalAlignment="Top" Height="50" Width="316" FontSize="36" FontFamily="Franklin Gothic Medium"/>
 
     </Grid>
 </Window>

@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="RuchiToursWPF.AddVehicleDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RuchiToursWPF"
+             mc:Ignorable="d" Height="800" Width="950">
+    <Grid Width="950" Height="800">
+        <Grid.Background>
+            <SolidColorBrush Color="White" Opacity="0.5"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="600" Stroke="White" VerticalAlignment="Center" Width="600" RadiusX="30" RadiusY="30" StrokeThickness="2" Margin="157,0,0,0">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF3AA9AD" Opacity="0.5"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="Add_Vehicle_Details" Content="Add Vehicle Details" HorizontalAlignment="Center" Margin="0,117,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" Width="400" Height="40" HorizontalContentAlignment="Center"/>
+        <Label Content="Vehicle Type" HorizontalAlignment="Left" Margin="230,408,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="18" Width="120" Height="32"/>
+        <Label Content="Capacity" HorizontalAlignment="Left" Margin="230,472,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="18" Width="100" Height="32"/>
+        <Label Content="VR Number" HorizontalAlignment="Left" Margin="230,530,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="18" Width="110" Height="32"/>
+        <TextBox x:Name="TxtVehicleType" HorizontalAlignment="Left" Margin="400,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Height="32" FontSize="18"/>
+        <TextBox x:Name="TxtCapacity" HorizontalAlignment="Left" Margin="400,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Height="32" FontSize="18"/>
+        <TextBox x:Name="TxtVRNumber" HorizontalAlignment="Left" Margin="400,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Height="32" FontSize="18"/>
+        <Button x:Name="BtnSave" Content="Save" HorizontalAlignment="Left" Margin="600,616,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Width="75" Height="26" Background="#FF518787" BorderBrush="Black"/>
+        <Label Content="" HorizontalAlignment="Center" Height="150" Margin="0,173,0,0" VerticalAlignment="Top" Width="150" Background="White"/>
+        <Button Content="Add Photo" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Width="150" Height="30" FontFamily="Microsoft Tai Le" FontSize="18" Background="#FF518787" BorderBrush="Black"/>
+
+    </Grid>
+</UserControl>

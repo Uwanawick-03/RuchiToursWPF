@@ -55,6 +55,172 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddAccommodationDetails.xaml.cs">
+      <DependentUpon>AddAccommodationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddCurrencyDetails.xaml.cs">
+      <DependentUpon>AddCurrencyDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddDriverDetails.xaml.cs">
+      <DependentUpon>AddDriverDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddGuestDetails.xaml.cs">
+      <DependentUpon>AddGuestDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddGuideDetails.xaml.cs">
+      <DependentUpon>AddGuideDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocationDetails.xaml.cs">
+      <DependentUpon>AddLocationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewTour.xaml.cs">
+      <DependentUpon>AddNewTour.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddVehicleDetails.xaml.cs">
+      <DependentUpon>AddVehicleDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Currency.xaml.cs">
+      <DependentUpon>Currency.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Driver.xaml.cs">
+      <DependentUpon>Driver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccommodationDetails.xaml.cs">
+      <DependentUpon>EditAccommodationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditCurrencyDetails.xaml.cs">
+      <DependentUpon>EditCurrencyDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditDriverDetails.xaml.cs">
+      <DependentUpon>EditDriverDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditGuestDetails.xaml.cs">
+      <DependentUpon>EditGuestDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditGuideDetails.xaml.cs">
+      <DependentUpon>EditGuideDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditLocationDetails.xaml.cs">
+      <DependentUpon>EditLocationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditVehicleDetails.xaml.cs">
+      <DependentUpon>EditVehicleDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GuestDetails.xaml.cs">
+      <DependentUpon>GuestDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Guides.xaml.cs">
+      <DependentUpon>Guides.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HotelAndAccommodations.xaml.cs">
+      <DependentUpon>HotelAndAccommodations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Locations.xaml.cs">
+      <DependentUpon>Locations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles.xaml.cs">
+      <DependentUpon>Vehicles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTours.xaml.cs">
+      <DependentUpon>ViewTours.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.xaml.cs">
+      <DependentUpon>Welcome.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddAccommodationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddCurrencyDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddDriverDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddGuestDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddGuideDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddLocationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewTour.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddVehicleDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Currency.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Driver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAccommodationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditCurrencyDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditDriverDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditGuestDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditGuideDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditLocationDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditVehicleDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GuestDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Guides.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HotelAndAccommodations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Locations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +233,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SignUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vehicles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTours.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -96,6 +278,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ali-maah-zyOeEm4NsPM-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="65e40045bf22817e519c939bb4bc1fab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="RS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="home-icon-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="plus icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
