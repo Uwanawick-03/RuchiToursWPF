@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlConnector;
 using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
@@ -107,11 +108,6 @@ namespace RuchiToursWPF
             {
                 db.CloseConnection();
             }
-
-        private void BtnLogin_Click(object sender, RoutedEventArgs e)
-        {
-          
-
 
         }
     }
