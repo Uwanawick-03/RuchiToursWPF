@@ -28,13 +28,21 @@
                 <SolidColorBrush Color="#FFFDFDFD" Opacity="0"/>
             </Label.Background>
         </Label>
+
+        <TextBox x:Name="TxtUserName" HorizontalAlignment="Center" Margin="0,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="30" FontFamily="Microsoft Tai Le" FontSize="20" TextChanged="TxtUserName_TextChanged"/>
+
         <TextBox x:Name="TxtUserName" HorizontalAlignment="Center" Margin="0,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="30" FontFamily="Microsoft Tai Le" FontSize="20"/>
+
         <Label Content="Password" HorizontalAlignment="Left" Margin="475,379,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="20" Width="92" Height="32">
             <Label.Background>
                 <SolidColorBrush Color="#FFFDFDFD" Opacity="0"/>
             </Label.Background>
         </Label>
+
+        <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" Margin="0,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="20" TextChanged="TxtPassword_TextChanged"/>
+
         <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" Margin="0,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="20"/>
+
         <Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,555,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" BorderThickness="7,0,0,0" Click="BtnRegister_Click">
             <Button.Style>
                 <Style/>

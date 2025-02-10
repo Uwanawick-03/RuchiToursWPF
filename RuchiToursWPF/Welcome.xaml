@@ -5,7 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RuchiToursWPF"
              mc:Ignorable="d" Width="950" Height="800">
-    <Grid Width="950" Height="795" d:IsLocked="True">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/ali-maah-zyOeEm4NsPM-unsplash.jpg"/>
+    </UserControl.Background>
+    <Grid x:Name="grid" Width="950" Height="795" d:IsLocked="True">
         <Rectangle x:Name="WelcomNote" HorizontalAlignment="Center" Height="380" Margin="0,190,0,0" Stroke="White" VerticalAlignment="Top" Width="600" StrokeThickness="5" RadiusX="30" RadiusY="30" d:IsLocked="True">
             <Rectangle.Effect>
                 <BlurEffect/>
