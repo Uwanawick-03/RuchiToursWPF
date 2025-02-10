@@ -45,6 +45,6 @@
                 <Style/>
             </Button.Style>
         </Button>
-        <ContentControl x:Name="HomeContentControl"/>
+        
     </Grid>
 </Window>
