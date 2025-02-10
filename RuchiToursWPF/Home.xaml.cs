@@ -23,5 +23,18 @@ namespace RuchiToursWPF
         {
             InitializeComponent();
         }
+
+        private void BtnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult check = MessageBox.Show("Are You sure you want to logout?"
+                ,"Confirmation Message",MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (check == MessageBoxResult.Yes)
+            {
+                MainWindow loginForm = new MainWindow();
+                loginForm.Show();
+                this.Hide();
+            }
+        }
     }
 }
