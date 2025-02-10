@@ -46,6 +46,7 @@ namespace RuchiToursWPF
             this.Hide();
         }
 
+
         private void TxtUserName_TextChanged(object sender, TextChangedEventArgs e)
         {
             username = TxtUserName.Text;
@@ -106,6 +107,12 @@ namespace RuchiToursWPF
             {
                 db.CloseConnection();
             }
+
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        {
+          
+
 
         }
     }
