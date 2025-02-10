@@ -36,7 +36,7 @@ namespace RuchiToursWPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
@@ -106,6 +106,7 @@ namespace RuchiToursWPF
             {
                 db.CloseConnection();
             }
+
         }
     }
 }
