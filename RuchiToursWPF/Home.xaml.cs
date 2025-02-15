@@ -36,5 +36,15 @@ namespace RuchiToursWPF
                 this.Hide();
             }
         }
+
+        private void AddNewTour_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GuestDetails_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

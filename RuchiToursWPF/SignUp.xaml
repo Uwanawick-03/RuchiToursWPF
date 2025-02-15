@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:RuchiToursWPF"
         mc:Ignorable="d"
         Title="SignUp" Height="600" Width="450" ResizeMode="NoResize" WindowStyle="None" Foreground="{x:Null}" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="SignUp1" Width="360" Height="500" d:IsLocked="True">
+    <Grid x:Name="SignUp1" Width="360" Height="500">
 
-        <Image Margin="-45,-50,-45,-50" Source="/RS.png" Stretch="Fill" d:IsLocked="True"/>
+        <Image Margin="-45,-50,-45,-50" Source="/RS.png" Stretch="Fill"/>
 
-        <Rectangle x:Name="PanelSignUp" HorizontalAlignment="Center" Height="500" Stroke="#FF0A555B" VerticalAlignment="Center" Width="360" RadiusX="20" RadiusY="20" StrokeThickness="2" d:IsLocked="True">
+        <Rectangle x:Name="PanelSignUp" HorizontalAlignment="Center" Height="500" Stroke="#FF0A555B" VerticalAlignment="Center" Width="360" RadiusX="20" RadiusY="20" StrokeThickness="2">
             <Rectangle.Effect>
                 <BlurEffect/>
             </Rectangle.Effect>
@@ -19,17 +19,17 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Label Content="Register New Account" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Franklin Gothic Medium" Width="300" Height="42" d:IsLocked="True"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="30,128,0,0" VerticalAlignment="Top" FontSize="20" Width="104" Height="32" FontFamily="Microsoft Tai Le" d:IsLocked="True"/>
-        <TextBox x:Name="TxtUsername" HorizontalAlignment="Center" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextChanged="TextBox_TextChanged" Height="30" FontSize="20" FontFamily="Microsoft Tai Le" d:IsLocked="True"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="30,232,0,0" VerticalAlignment="Top" FontSize="20" Width="104" Height="32" FontFamily="Microsoft Tai Le" d:IsLocked="True"/>
-        <TextBox x:Name="TxtPassword" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextChanged="TextBox_TextChanged" Height="32" FontSize="20" FontFamily="Microsoft Tai Le" Margin="0,274,0,0" d:IsLocked="True"/>
-        <Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,366,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" BorderThickness="7,0,0,0" Click="BtnRegister_Click" Background="#FF74C2C2" BorderBrush="#FF2D7B7B" d:IsLocked="True">
+        <Label Content="Register New Account" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Franklin Gothic Medium" Width="300" Height="42"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="30,128,0,0" VerticalAlignment="Top" FontSize="20" Width="104" Height="32" FontFamily="Microsoft Tai Le"/>
+        <TextBox x:Name="TxtUsernameSignUP" HorizontalAlignment="Center" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextChanged="TextBox_TextChanged" Height="30" FontSize="20" FontFamily="Microsoft Tai Le"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="30,232,0,0" VerticalAlignment="Top" FontSize="20" Width="104" Height="32" FontFamily="Microsoft Tai Le"/>
+        <TextBox x:Name="TxtPasswordSignUp" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" TextChanged="TextBox_TextChanged" Height="32" FontSize="20" FontFamily="Microsoft Tai Le" Margin="0,274,0,0"/>
+        <Button x:Name="BtnRegister" Content="Register" HorizontalAlignment="Center" Margin="0,366,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" BorderThickness="7,0,0,0" Click="BtnRegister_Click" Background="#FF74C2C2" BorderBrush="#FF2D7B7B">
             <Button.Style>
                 <Style/>
             </Button.Style>
         </Button>
-        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,418,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" Background="White" BorderThickness="7,0,0,0" BorderBrush="#FF707070" ClipToBounds="True" Click="BtnLogin_Click" d:IsLocked="True">
+        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,418,0,0" VerticalAlignment="Top" Width="300" Height="32" FontFamily="Microsoft Tai Le" FontSize="16" Background="White" BorderThickness="7,0,0,0" BorderBrush="#FF707070" ClipToBounds="True" Click="BtnLogin_Click">
             <Button.Style>
                 <Style/>
             </Button.Style>

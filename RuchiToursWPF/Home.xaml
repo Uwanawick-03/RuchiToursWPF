@@ -44,8 +44,7 @@
         <local:Driver HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Top"/>
         <local:GuestDetails HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Top"/>
         <local:ViewTours HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
-        <local:AddNewTour HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
-        <local:Welcome HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:AddNewTour HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center" Loaded="AddNewTour_Loaded"/>
 
     </Grid>
 </Window>

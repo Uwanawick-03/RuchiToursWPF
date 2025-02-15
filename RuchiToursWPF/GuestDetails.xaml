@@ -5,26 +5,59 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RuchiToursWPF"
              mc:Ignorable="d" Width="950" Height="796">
-    <Grid Width="950" Height="794">
-        <Grid.Background>
-            <SolidColorBrush Color="White" Opacity="0.5"/>
-        </Grid.Background>
-        <Label x:Name="Guest_Details" Content="Guest Details" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" Width="174" Height="40" HorizontalContentAlignment="Center"/>
-        <Label x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="592,94,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="25" Width="58"/>
-        <TextBox x:Name="TxtSearchBoxGD" HorizontalAlignment="Left" Margin="685,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="25"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Width="820" Height="150" Margin="65,134,65,510" FontFamily="Microsoft Tai Le" FontSize="11" HeadersVisibility="Column" ColumnHeaderHeight="20" AutoGenerateColumns="False" RowHeight="20">
+    <Grid Width="950" Height="794" Background="White">
+
+        <Label Content="Guest Details" HorizontalAlignment="Center" VerticalAlignment="Top" 
+               FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" 
+               Width="174" Height="40" HorizontalContentAlignment="Center" Margin="0,17,0,0"/>
+
+        <!-- Search Box -->
+        <Label Content="Search" HorizontalAlignment="Left" Margin="592,94,0,0" VerticalAlignment="Top"
+               FontFamily="Microsoft Tai Le" FontSize="16" Height="25" Width="58"/>
+        <TextBox x:Name="TxtSearchBoxGD" HorizontalAlignment="Left" Margin="685,94,0,0" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="25" 
+                 TextChanged="TxtSearchBoxGD_TextChanged"/>
+
+        <!-- DataGrid for Guests -->
+        <DataGrid x:Name="guestDataGridView" Width="820" Height="450" Margin="65,134,65,90" 
+                  FontFamily="Microsoft Tai Le" FontSize="11" AutoGenerateColumns="False"
+                  HeadersVisibility="Column" ColumnHeaderHeight="30" RowHeight="30"
+                  ItemsSource="{Binding Guests}" SelectionMode="Single">
+
             <DataGrid.Columns>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="ID" Width="20"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="Name" Width="130"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="Contact No" Width="130"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="E-mail" Width="130"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="Country" Width="130"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="8" Header="Passport No" Width="130"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="Edit" Width="75"/>
-                <DataGridTextColumn FontFamily="Microsoft Tai Le" FontSize="10" Header="Delete" Width="75"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding GuestId}" Width="50" Visibility="Collapsed"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding FullName}" Width="130"/>
+                <DataGridTextColumn Header="Contact No" Binding="{Binding ContactNo}" Width="130"/>
+                <DataGridTextColumn Header="E-mail" Binding="{Binding Email}" Width="130"/>
+                <DataGridTextColumn Header="Country" Binding="{Binding Country}" Width="130"/>
+                <DataGridTextColumn Header="Passport No" Binding="{Binding PassportNo}" Width="130"/>
+
+                <!-- Edit Button -->
+                <DataGridTemplateColumn Header="Edit" Width="75">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Edit" Click="EditButton_Click" Tag="{Binding}" Background="LightBlue"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Delete Button -->
+                <DataGridTemplateColumn Header="Delete" Width="75">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Click="DeleteButton_Click" Tag="{Binding}" Background="Salmon"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="BtnAdd" HorizontalAlignment="Left" Margin="807,712,0,0" VerticalAlignment="Top" Width="78" Height="23" HorizontalContentAlignment="Center" AllowDrop="True" Padding="1,1,1,0" Content="Add" FontFamily="Microsoft Tai Le" FontSize="16" FontWeight="Bold" Background="#FF518787" BorderBrush="Black"/>
+
+        <!-- Add Button -->
+        <Button x:Name="BtnAdd" Content="Add" HorizontalAlignment="Right" Margin="0,712,65,0" 
+                VerticalAlignment="Top" Width="78" Height="30" FontFamily="Microsoft Tai Le" 
+                FontSize="16" FontWeight="Bold" Background="#FF518787" BorderBrush="Black"
+                Click="BtnAdd_Click"/>
 
     </Grid>
 </UserControl>
