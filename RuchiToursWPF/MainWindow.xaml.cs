@@ -38,6 +38,7 @@ namespace RuchiToursWPF
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+
         }
 
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
