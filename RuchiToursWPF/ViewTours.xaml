@@ -7,12 +7,12 @@
              mc:Ignorable="d" Height="800" Width="950">
     <Grid Width="950" Height="800">
         <Grid.Background>
-            <SolidColorBrush Color="White" Opacity="0.5"/>
+            <SolidColorBrush Color="White" Opacity="1"/>
         </Grid.Background>
         <Label x:Name="View_Tours" Content="View Tours" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" Width="174" Height="40" HorizontalContentAlignment="Center"/>
         <Label x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="592,94,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="25" Width="58"/>
         <TextBox x:Name="TxtSearchBox" HorizontalAlignment="Left" Margin="685,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" Height="25"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="48,134,47,204" HeadersVisibility="Column" Width="855" RowHeight="20">
+        <DataGrid x:Name="AddNewTourGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="48,134,47,204" HeadersVisibility="Column" Width="855" RowHeight="20">
             <DataGrid.ColumnHeaderStyle>
                 <Style/>
             </DataGrid.ColumnHeaderStyle>

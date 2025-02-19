@@ -17,17 +17,18 @@
             </Rectangle.Fill>
         </Rectangle>
         <Label x:Name="RuchiTuors" Content="Ruchi Tuors" HorizontalAlignment="Left" Margin="62,37,0,0" VerticalAlignment="Top" FontFamily="Microsoft Uighur" FontSize="48" Height="45" Width="176"/>
-        <Button x:Name="BtnHome" Content="" HorizontalAlignment="Left" Margin="62,99,0,0" VerticalAlignment="Top" Width="38" Height="38" BorderThickness="0,0,0,0" BorderBrush="#FF171717">
+        <Button x:Name="BtnHome" HorizontalAlignment="Left" Margin="62,99,0,0" VerticalAlignment="Top" Width="38" Height="38" BorderThickness="0,0,0,0" BorderBrush="#FF171717">
             <Button.Background>
                 <ImageBrush ImageSource="/home-icon-silhouette.png" Stretch="UniformToFill"/>
             </Button.Background>
+            <local:AddAccommodationDetails/>
         </Button>
         <Button x:Name="BtnLogout" Content="" HorizontalAlignment="Left" Margin="200,99,0,0" VerticalAlignment="Top" Width="38" Height="38" BorderThickness="0,0,0,0" BorderBrush="#FF171717" Click="BtnLogout_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/logout.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BtnAddNewTour" Content="Add New Tour" HorizontalAlignment="Left" Margin="62,184,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
+        <Button x:Name="BtnAddNewTour" Content="Add New Tour" HorizontalAlignment="Left" Margin="62,184,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717" Click="BtnAddNewTour_Click"/>
         <Button x:Name="BtnViewTours" Content="View Tours" HorizontalAlignment="Left" Margin="62,244,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
         <Button x:Name="BtnGuestDetails" Content="Guest Details" HorizontalAlignment="Left" Margin="62,364,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
         <Button x:Name="BtnDrivers" Content="Drivers" HorizontalAlignment="Left" Margin="62,424,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
