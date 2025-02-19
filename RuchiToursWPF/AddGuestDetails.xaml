@@ -7,7 +7,7 @@
              mc:Ignorable="d" Height="796" Width="950">
     <Grid Width="950" Height="799">
         <Grid.Background>
-            <SolidColorBrush Color="White" Opacity="0.5"/>
+            <SolidColorBrush Color="White" Opacity="1"/>
         </Grid.Background>
         <Rectangle HorizontalAlignment="Center" Height="600" Stroke="White" VerticalAlignment="Center" Width="600" RadiusX="30" RadiusY="30" StrokeThickness="2">
             <Rectangle.Effect>

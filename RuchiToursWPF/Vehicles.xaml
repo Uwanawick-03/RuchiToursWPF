@@ -7,7 +7,7 @@
              mc:Ignorable="d" Height="797" Width="950">
     <Grid Width="950" Height="796">
         <Grid.Background>
-            <SolidColorBrush Color="White" Opacity="0.5"/>
+            <SolidColorBrush Color="White" Opacity="1"/>
         </Grid.Background>
         <Label x:Name="Vehicles1" Content="Vehicles" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" Width="174" Height="40" HorizontalContentAlignment="Center"/>
         <Label x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="592,94,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="25" Width="58"/>

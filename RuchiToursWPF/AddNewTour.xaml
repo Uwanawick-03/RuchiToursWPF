@@ -4,34 +4,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RuchiToursWPF"
-             mc:Ignorable="d" Width="950" Height="792">
-    <Grid Width="950" Height="800">
+             mc:Ignorable="d" Width="950" Height="800">
+    <Grid x:Name="AddNewTourGrid" Width="950" Height="800">
         <Grid.Background>
-            <SolidColorBrush Color="White" Opacity="0.5"/>
+            <SolidColorBrush Color="White" Opacity="1"/>
         </Grid.Background>
         <Label x:Name="Add_New_Tour" Content="Add New Tour" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" Width="174" Height="40" HorizontalContentAlignment="Center"/>
-        <Label x:Name="Guest" Content="Guest" HorizontalAlignment="Left" Margin="65,80,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Number_of_Tour_Members" Content="Number of Tour Members" HorizontalAlignment="Left" Margin="65,164,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Driver" Content="Driver" HorizontalAlignment="Left" Margin="65,248,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Guide" Content="Guide" HorizontalAlignment="Left" Margin="65,332,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Vehicle" Content="Vehicle" HorizontalAlignment="Left" Margin="65,416,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Currency" Content="Currency" HorizontalAlignment="Left" Margin="65,500,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Starting_Date" Content="Starting Date" HorizontalAlignment="Left" Margin="449,589,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <Label x:Name="Ending_Date" Content="Ending Date" HorizontalAlignment="Left" Margin="685,589,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16"/>
-        <ComboBox x:Name="ComBoxGuest" HorizontalAlignment="Left" Margin="65,122,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
-        <TextBox x:Name="TxtNumberOfTM" HorizontalAlignment="Left" Margin="65,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
-        <ComboBox x:Name="ComBoxDriver" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
-        <ComboBox x:Name="ComBoxGuide" HorizontalAlignment="Center" Margin="0,374,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
-        <ComboBox x:Name="ComBoxVehicle" HorizontalAlignment="Center" Margin="0,458,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
-        <ComboBox x:Name="ComBoxCurrency" HorizontalAlignment="Center" Margin="0,542,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
-        <DatePicker x:Name="DateTimePickerStartDate" HorizontalAlignment="Left" Margin="449,627,0,0" VerticalAlignment="Top" Width="200" Height="24"/>
-        <DatePicker x:Name="DateTimePickerEndingDate" HorizontalAlignment="Left" Margin="685,627,0,0" VerticalAlignment="Top" Width="200" Height="24"/>
-        <DatePicker x:Name="DateTimePickerLocation" HorizontalAlignment="Left" Margin="65,717,0,0" VerticalAlignment="Top" Width="360" Height="24"/>
+        <Label x:Name="Guest" Content="Guest" HorizontalAlignment="Left" Margin="65,80,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Number_of_Tour_Members" Content="Number of Tour Members" HorizontalAlignment="Left" Margin="65,150,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Driver" Content="Driver" HorizontalAlignment="Left" Margin="65,222,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Guide" Content="Guide" HorizontalAlignment="Left" Margin="65,292,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Vehicle" Content="Vehicle" HorizontalAlignment="Left" Margin="65,362,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Currency" Content="Currency" HorizontalAlignment="Left" Margin="65,432,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Starting_Date" Content="Starting Date" HorizontalAlignment="Left" Margin="65,502,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <Label x:Name="Ending_Date" Content="Ending Date" HorizontalAlignment="Left" Margin="685,502,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
+        <ComboBox x:Name="ComBoxGuest" HorizontalAlignment="Left" Margin="65,115,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
+        <TextBox x:Name="TxtNumberOfTM" HorizontalAlignment="Left" Margin="65,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
+        <ComboBox x:Name="ComBoxDriver" HorizontalAlignment="Center" Margin="0,257,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
+        <ComboBox x:Name="ComBoxGuide" HorizontalAlignment="Center" Margin="0,327,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
+        <ComboBox x:Name="ComBoxVehicle" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16" SelectionChanged="ComBoxVehicle_SelectionChanged"/>
+        <ComboBox x:Name="ComBoxCurrency" HorizontalAlignment="Center" Margin="0,467,0,0" VerticalAlignment="Top" Width="820" Height="25" FontSize="16"/>
+        <DatePicker x:Name="DateTimePickerStartDate" HorizontalAlignment="Left" Margin="65,537,0,0" VerticalAlignment="Top" Width="200" Height="30" FontSize="14"/>
+        <DatePicker x:Name="DateTimePickerEndingDate" HorizontalAlignment="Left" Margin="685,537,0,0" VerticalAlignment="Top" Width="200" Height="30" FontSize="14"/>
+        <DatePicker x:Name="DateTimePickerLocation" HorizontalAlignment="Left" Margin="65,717,0,0" VerticalAlignment="Top" Width="360" Height="30" FontSize="14"/>
         <ComboBox x:Name="ComBoxLocation" HorizontalAlignment="Left" Margin="65,626,0,0" VerticalAlignment="Top" Width="360" FontSize="16" Height="25"/>
         <ComboBox x:Name="ComboxAccomo" HorizontalAlignment="Left" Margin="65,657,0,0" VerticalAlignment="Top" Width="360" FontSize="16" Height="25"/>
         <TextBox x:Name="TxtCharge" HorizontalAlignment="Left" Margin="65,688,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="25" FontSize="16"/>
-        <Button x:Name="BtnAddLocation" Content="Add Location" HorizontalAlignment="Left" Margin="65,584,0,0" VerticalAlignment="Top" Width="99" Height="26" Background="#FF518787" FontFamily="Microsoft Tai Le" FontSize="14" FontWeight="Bold" BorderBrush="Black"/>
-        <Button x:Name="BtnSave" Content="Save" HorizontalAlignment="Left" Margin="810,712,0,0" VerticalAlignment="Top" Width="75" Height="26" Background="#FF518787" FontFamily="Microsoft Tai Le" FontSize="14" FontWeight="Bold" BorderBrush="Black"/>
+        <Button x:Name="BtnAddLocation" Content="Add Location" HorizontalAlignment="Left" Margin="65,584,0,0" VerticalAlignment="Top" Width="99" Height="26" Background="#FF518787" FontFamily="Microsoft Tai Le" FontSize="14" FontWeight="Bold" BorderBrush="Black" Click="BtnAddLocation_Click"/>
+        <Button x:Name="BtnSave" Content="Save" HorizontalAlignment="Left" Margin="810,712,0,0" VerticalAlignment="Top" Width="75" Height="26" Background="#FF518787" FontFamily="Microsoft Tai Le" FontSize="14" FontWeight="Bold" BorderBrush="Black" Click="BtnSave_Click"/>
+        <CheckBox x:Name="accommodationCheck" Content="Already Booked an Accommodation" HorizontalAlignment="Left" Margin="451,660,0,0" VerticalAlignment="Top" Width="250" Height="20" FontFamily="Microsoft Tai Le" FontSize="14"/>
 
     </Grid>
 </UserControl>
