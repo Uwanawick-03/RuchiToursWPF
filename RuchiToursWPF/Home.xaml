@@ -23,7 +23,7 @@
             </Button.Background>
             <local:AddAccommodationDetails/>
         </Button>
-        <Button x:Name="BtnLogout" Content="" HorizontalAlignment="Left" Margin="200,99,0,0" VerticalAlignment="Top" Width="38" Height="38" BorderThickness="0,0,0,0" BorderBrush="#FF171717">
+        <Button x:Name="BtnLogout" Content="" HorizontalAlignment="Left" Margin="200,99,0,0" VerticalAlignment="Top" Width="38" Height="38" BorderThickness="0,0,0,0" BorderBrush="#FF171717" Click="BtnLogout_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/logout.png"/>
             </Button.Background>
@@ -37,23 +37,15 @@
         <Button x:Name="BtnCurrencies" Content="Currencies" HorizontalAlignment="Left" Margin="62,604,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
         <Button x:Name="BtnLocations" Content="Locations" HorizontalAlignment="Left" Margin="62,664,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
         <Button x:Name="BtnAccomodation" Content="Hotels &amp; Accomodation" HorizontalAlignment="Left" Margin="62,724,0,0" VerticalAlignment="Top" Width="176" Height="30" Background="#FF518787" FontSize="14" FontFamily="Microsoft Tai Le" BorderBrush="#FF171717"/>
-        <local:AddAccommodationDetails HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
-        <local:HotelAndAccommodations Margin="300,0,0,0"/>
-        <local:AddLocationDetails Margin="300,0,0,0"/>
-        <local:Locations Margin="305,-1,0,0"/>
-        <local:AddCurrencyDetails Margin="305,0,-5,0"/>
-        <local:Currency Margin="305,0,-5,0"/>
-        <local:AddVehicleDetails Margin="305,0,-5,0"/>
-        <local:Vehicles Margin="305,2,-5,0"/>
-        <local:AddGuideDetails Margin="300,2,0,0" Height="800" VerticalAlignment="Top"/>
-        <local:Guides Height="799" Margin="300,2,0,0" VerticalAlignment="Top"/>
-        <local:AddDriverDetails Margin="305,2,-5,0" Height="800" VerticalAlignment="Top"/>
-        <local:Driver Margin="300,1,0,0" Height="797" VerticalAlignment="Top"/>
-        <local:AddGuestDetails Margin="305,0,0,0" Height="796" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950"/>
-        <local:GuestDetails Margin="305,0,0,0" Height="796" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950"/>
-        <local:ViewTours Margin="305,0,0,0" Height="800" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950"/>
-        <local:AddNewTour Margin="305,0,0,0" Height="800" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950"/>
-        <local:Welcome HorizontalAlignment="Left" Margin="346,82,0,0" VerticalAlignment="Top"/>
+        <local:HotelAndAccommodations HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:Locations HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:Currency HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:Vehicles HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:Guides HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:Driver HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Top"/>
+        <local:GuestDetails HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Top"/>
+        <local:ViewTours HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center"/>
+        <local:AddNewTour HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center" Loaded="AddNewTour_Loaded"/>
 
     </Grid>
 </Window>

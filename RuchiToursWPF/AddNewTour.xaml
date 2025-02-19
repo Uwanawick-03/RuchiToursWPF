@@ -5,10 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RuchiToursWPF"
              mc:Ignorable="d" Width="950" Height="800">
+    
     <Grid x:Name="AddNewTourGrid" Width="950" Height="800">
         <Grid.Background>
             <SolidColorBrush Color="White" Opacity="1"/>
         </Grid.Background>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            
+        </ScrollViewer>
+
+
         <Label x:Name="Add_New_Tour" Content="Add New Tour" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft Tai Le" FontWeight="Bold" Width="174" Height="40" HorizontalContentAlignment="Center"/>
         <Label x:Name="Guest" Content="Guest" HorizontalAlignment="Left" Margin="65,80,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>
         <Label x:Name="Number_of_Tour_Members" Content="Number of Tour Members" HorizontalAlignment="Left" Margin="65,150,0,0" VerticalAlignment="Top" FontFamily="Microsoft Tai Le" FontSize="16" Height="30"/>

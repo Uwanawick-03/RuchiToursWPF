@@ -71,7 +71,7 @@ namespace RuchiToursWPF
 
             ComboBox newAccommodationBox = new ComboBox();
             Canvas.SetLeft(newAccommodationBox, Canvas.GetLeft(ComboxAccomo)); // Same X position
-            Canvas.SetTop(newAccommodationBox, sectionY + 30); // Dynamic Y position
+            Canvas.SetTop(newAccommodationBox, sectionY+30); // Dynamic Y position
             newAccommodationBox.Width = ComboxAccomo.Width;
             newAccommodationBox.Text = "Accommodation";
             newAccommodationBox.Visibility = Visibility.Visible;// Ensure visibility is set to true
@@ -552,9 +552,9 @@ namespace RuchiToursWPF
             }
         }
 
-        private void ComBoxVehicle_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        /*private void ComBoxVehicle_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-        }
+        }*/
     }
 }

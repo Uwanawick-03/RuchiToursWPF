@@ -1,5 +1,6 @@
-﻿using MySql.Data.MySqlClient;
-using MySqlX.XDevAPI;
+﻿
+using MySql.Data.MySqlClient;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,14 +30,15 @@ namespace RuchiToursWPF
         private String username = "";
         private String password = "";
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        /*private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
-        }
+        }*/
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.Close();
+
         }
 
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
@@ -45,6 +47,7 @@ namespace RuchiToursWPF
             SignupFm.Show();
             this.Hide();
         }
+
 
         private void TxtUserName_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -86,7 +89,7 @@ namespace RuchiToursWPF
                         if (count == 1)
                         {
                             this.Hide(); // Hide login form
-                            Session.Equals(username, password);
+                           // Session.Equals(username, password);
                             Home homePage = new Home();
                             homePage.ShowDialog();
                             this.Close();
@@ -106,6 +109,7 @@ namespace RuchiToursWPF
             {
                 db.CloseConnection();
             }
+
         }
     }
 }

@@ -38,24 +38,14 @@ namespace RuchiToursWPF
             }
         }
 
-        private void BtnAddNewTour_Click(object sender, RoutedEventArgs e)
+        private void AddNewTour_Loaded(object sender, RoutedEventArgs e)
         {
-           
-            viewTours.IsVisible = false;
-            guestDetails1.Visible = false;
-            drivers1.Visible = false;
-            guides1.Visible = false;
-            vehicle1.Visible = false;
-            currency1.Visible = false;
-            locations1.Visible = false;
-            accommodations1.Visible = false;
-            addAccommodation1.Visible = false;
-            addLocations1.Visible = false;
-            addCurrency1.Visible = false;
-            addVehicles1.Visible = false;
-            addGuides1.Visible = false;
-            addDrivers1.Visible = false;
-            addGuestDetails1.Visible = false;
+
+        }
+
+        private void GuestDetails_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
